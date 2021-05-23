@@ -6,7 +6,13 @@ admin = Admin(app)
 
 @app.route('/')
 def hello_world():
-	return 'Hello World!'
+    return 'Hello World!'
+
+@app.route('/welcome')
+def welcome():
+    return '你好世界!'
 
 if __name__ == '__main__':
-	app.run()
+    app.run()
+
+
